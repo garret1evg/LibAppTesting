@@ -1,3 +1,5 @@
+include ':ButtonUtil'
 include ':mylibrary'
 include ':app'
+project(':ButtonUtil').projectDir = new File(rootDir, 'ButtonUtil-Android/ButtonUtil/')
 rootProject.name = "LibAppTesting"
