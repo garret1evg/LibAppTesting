@@ -1,5 +1,6 @@
 package com.example.libapptesting
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         buttonA.setOnClickListener{
             val logger = MyLogger()
             logger.log("aaaaaa")
+            val intent = Intent(this, VideoGalleryActivity::class.java)
+            startActivity(intent)
         }
+
     }
 }
